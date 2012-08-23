@@ -1,11 +1,5 @@
 <% provide(:title, 'Home') %>
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Reuknighted | <%= yield(:title) %></title>
-  </head>
-  <body>
+
 <h1>Reuknighted</h1>
 <p>Welcome to Reuknighted, a networking site for all gamers.</p>
-</body>
-</html>
+
