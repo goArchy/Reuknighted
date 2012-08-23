@@ -1,0 +1,11 @@
+<% provide(:title, 'About') %>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Reuknighted | <%= yield(:title) %></title>
+  </head>
+  <body>
+<h1>About Reuknighted</h>
+<p>Reuknighted, a web app that will allow you to create an online library of games owned. You can then "check-in" to allow your followers to see what game you are playing. Giving your friends the option, assuming they own the same game and console, to join you online.</p>
+</body>
+</html>
