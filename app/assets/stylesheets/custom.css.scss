@@ -1,6 +1,10 @@
 @import "bootstrap";
 
                      /* universal */
+                     
+                     /* mixins, variables, etc. */
+
+$grayMediumLight: #eaeaea;
 
 html {
    overflow-y: scroll;   
@@ -20,10 +24,9 @@ textarea {
 
 .center {
   text-align: center;
-}
-
-.center h1 {
-  margin-bottom: 10px;
+    h1 {
+    margin-bottom: 10px;
+  }
 }
 
 
@@ -47,7 +50,7 @@ h2 {
   margin-bottom: 30px;
   text-align: center;
   font-weight: normal;
-  color: #999;
+  color: $grayLight;
 }
 
 p {
@@ -68,11 +71,11 @@ p {
   padding-top: 9px;
   font-weight: bold;
   line-height: 1;
-}
 
-#logo:hover {
+ &:hover {
   color: #fff;
   text-decoration: none;
+  }
 }
 
 
@@ -81,29 +84,27 @@ p {
 footer {
   margin-top: 45px;
   padding-top: 5px;
-  border-top: 1px solid #eaeaea;
-  color: #999;
-}
+  border-top: 1px solid $grayMediumLight;
+  color: $grayLight;
 
-footer a {
-  color: #555;
-}  
+ a {
+  color: #555; 
 
-footer a:hover { 
+ &:hover { 
   color: #222;
+ }
 }
-
-footer small {
+ small {
   float: left;
 }
 
-footer ul {
+ ul {
   float: right;
   list-style: none;
-}
-
-footer ul li {
+ li {
   float: left;
   margin-left: 10px;
+  } 
+ }
 }
 
