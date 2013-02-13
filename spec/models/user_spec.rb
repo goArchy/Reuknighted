@@ -14,7 +14,7 @@ require 'spec_helper'
 describe User do
 
   before do
-    @user = User.new(name: "Example User", email: "user@example.com", 
+    @user = User.new(name: "Example User", email: "user@example.com",
                      password: "foobar", password_confirmation: "foobar")
   end
 
@@ -33,12 +33,12 @@ describe User do
     before { @user.name = " " }
     it { should_not be_valid }
   end
-  
+
   describe "when email is not present" do
     before { @user.email = " " }
     it { should_not be_valid }
   end
-  
+
   describe "when name is too long" do
     before { @user.name = "a" * 51 }
     it { should_not be_valid }
@@ -51,7 +51,7 @@ describe User do
       addresses.each do |invalid_address|
         @user.email = invalid_address
         @user.should_not be_valid
-      end      
+      end
     end
   end
 
@@ -61,7 +61,7 @@ describe User do
       addresses.each do |valid_address|
         @user.email = valid_address
         @user.should be_valid
-      end      
+      end
     end
   end
 
